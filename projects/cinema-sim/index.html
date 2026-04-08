@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Simulator — Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <nav>
+      <a href="../../" class="logo">YN<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="../../#builds">Builds</a>
+        <a href="../../#design">Design</a>
+      </div>
+    </nav>
+
+    <div class="project-page">
+      <a href="../../" class="back">← back to all projects</a>
+
+      <h1>Cinema Simulator</h1>
+      <p class="meta">Java · JavaFX · MVC · Desktop app</p>
+
+      <img
+        src="screenshot.png"
+        alt="Cinema Simulator screenshot"
+        class="hero-img"
+      />
+
+      <h2>What it is</h2>
+      <p>
+        A desktop cinema booking system built with JavaFX. Users can browse
+        sessions, purchase tickets, food, and drinks using a simulated account
+        balance, with full validation for edge cases like insufficient or
+        excessive amounts.
+      </p>
+
+      <h2>What I built</h2>
+      <p>
+        Designed the full application using MVC architecture — keeping UI,
+        business logic, and data clearly separated. Implemented the account
+        balance system with purchase validation and automatic balance updates
+        across all transaction types.
+      </p>
+
+      <h2>What I learned</h2>
+      <p>
+        MVC forces you to think about what belongs where before you write a
+        single line. I found myself refactoring a lot early on when I realised
+        I'd put logic in the wrong layer — which was a frustrating but genuinely
+        useful lesson.
+      </p>
+
+      <div class="project-links">
+        <a
+          href="https://github.com/you/cinema-sim"
+          class="btn-secondary"
+          target="_blank"
+          >View on GitHub</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

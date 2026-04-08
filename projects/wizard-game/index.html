@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizard Game — Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <nav>
+      <a href="../../" class="logo">YN<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="../../#builds">Builds</a>
+        <a href="../../#design">Design</a>
+      </div>
+    </nav>
+
+    <div class="project-page">
+      <a href="../../" class="back">← back to all projects</a>
+
+      <h1>Wizard Game</h1>
+      <p class="meta">
+        Unity · C# · Multiplayer · 2025 – Present · Team project
+      </p>
+
+      <img src="screenshot.png" alt="Wizard Game screenshot" class="hero-img" />
+
+      <h2>What it is</h2>
+      <p>
+        A 4-player couch party game inspired by Kirby Air Riders. Phase 1 is a
+        draft — each player collects stats and picks up to 2 spells from the
+        arena. Phase 2 opens a vote: players choose which minigame to play next.
+        The twist is that your loadout from phase 1 carries into whatever you
+        voted for.
+      </p>
+
+      <h2>What I built</h2>
+      <p>
+        I owned the full UI layer — main menus, in-game HUD, the ready-up
+        screen, and the voting interface. I also built the multiplayer setup and
+        split-screen logic.
+      </p>
+      <p>
+        The part I'm most proud of: the dynamic split-screen camera. Rather than
+        locking to fixed quadrants, the camera tracks only the players who are
+        still alive, zooming out when they spread apart and zooming in when they
+        cluster — all handled automatically at runtime. Getting the transitions
+        to feel smooth rather than jarring took a lot of iteration.
+      </p>
+
+      <h2>What I learned</h2>
+      <p>
+        Local multiplayer has a surprising amount of edge cases. The ready-up
+        system alone needed to handle players joining and leaving mid-lobby
+        cleanly. I got a lot more comfortable with Unity's input system and
+        event-driven architecture through this project.
+      </p>
+
+      <div class="project-links">
+        <a
+          href="https://bugbench.itch.io/wizard-game"
+          class="btn-primary"
+          target="_blank"
+          >Play on itch.io</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
